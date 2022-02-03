@@ -1,0 +1,18 @@
+
+
+def MaxNonOverlappingSegments(two_arrs=[A,B])
+
+
+	covered = set()
+	
+	# start indexing at idx=0, A=1, B=5
+	for idx, (a,b) in enumerate(zip(two_arrs)):
+		# cover up to, but not including, the end value `b`.
+		add_cover = range(a, b)
+
+		# make sure this is only adding to the set.
+		covered.add([x for x in add_cover])
+		
+		# go to the next line and do the same thing.
+
+	
